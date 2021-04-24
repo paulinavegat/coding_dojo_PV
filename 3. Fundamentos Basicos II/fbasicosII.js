@@ -108,7 +108,7 @@ y = incrementaPosImpar([1, 3, 4, 5, 6, 7]);
 
 function  LongitudPrevia(arr)  {        
     for  (var  i  =  arr.length  -  1;  i  > 0;  i--)  {    // normalmente el arr se recorre de izq a derecha, esta vez como quiero analizar los elementos previos en el arreglo, recorrer el arreglo de derecha izq.  
-        //para ello establecí que la i partiría desde la última posción del arreglo, en este caso 2, Y que además la i debía ser menor que 0, ya que no queremos modificar el elemento en dicha posición,
+        //para ello establecí que la i partiría desde la última posción del arreglo, en este caso genial, Y que además la i debía ser menor que 0, ya que no queremos modificar el elemento en dicha posición,
         //por otra parte, la i va decrementar, ya que estamos recorriendo de derecha a izquierda.
 
         var  temp  =  arr[i];         //establezco una variable temporal para que contenta los valores que modificaré, modificar 
