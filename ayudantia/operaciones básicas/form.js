@@ -15,5 +15,6 @@ function calcular() {
         resultado = num1 / num2;
     }
     //console.log(resultado);
-    document.querySelector('#resultados').innerHTML = resultado;
+    //document.querySelector('#resultados').innerHTML = resultado; //esta es una posibilidad de traer el  resultado al HTML
+    document.getElementById("resultados").innerHTML = resultado;
 }
