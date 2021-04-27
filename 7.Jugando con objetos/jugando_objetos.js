@@ -13,13 +13,18 @@ for (var i = 0; i < users.length; i++) {
 }
 
 //¿Cómo harías para imprimir el nombre de los mayores de edad?
-function findMayordeEdad(users) {
+function findMayordeEdad() {
+    var users = [{ name: "Michael", age: 37 }, { name: "John", age: 30 }, { name: "David", age: 27 }];
     var min = 18;
     for (var i = 0; i < users.length; i++) {
         //condición si el usario tiene igual o mas de la edad minima, imprimira su valor
-        if (users[i].age >= min) {
-            console.log(users[i].name);
-        } else console.log("Menor de edad"); //sino cumple la condición imprirá menor de edad.
+        //  if (users[i].age >= min) {
+        //      console.log(users[i].name);
+        // } else{
+        //	console.log("Menor de edad"); //sino cumple la condición imprirá menor de edad.			
+        //}
+        var resultado = (users[i].age >= min) ? users[i].name : "Menor de edad"; // ocupando operadores condicionales (ternarios)
+        console.log(resultado);
     }
 }
-y = findMayordeEdad([{ name: "Michael", age: 37 }, { name: "John", age: 30 }, { name: "David", age: 27 }]);
+y = findMayordeEdad();
