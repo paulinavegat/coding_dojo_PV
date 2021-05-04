@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+div.row div {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    /*me permitio eliminar espacios entre las filas, intente con margin pero no resultaba */
+}
+
+div.brick {
+    background-color: blue;
+}
+
+div.coin {
+    background: url("coin1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div#pacman {
+    background: url("pacman.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /*no deberia usarse, pero para juegos como estos si es posible, pero posicion absoluta puede definir exactamente donde ese tag puede ir*/
+}
+
+div.empty {}
+
+div#cereza {
+    background: url("cereza.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div#ghost {
+    background: url("ghost1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+div#puntaje {
+    border: 1px solid white;
+    width: 40px;
+    height: 30px;
+    color: white;
+    padding: 7px;
+    padding-top: 12px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+div#vida {
+    border: 1px solid white;
+    width: 40px;
+    height: 30px;
+    color: white;
+    padding: 7px;
+    padding-top: 12px;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 350px;
+}
