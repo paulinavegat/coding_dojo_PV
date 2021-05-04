@@ -60,6 +60,7 @@ function displayWorld() {
         }
         output += "\n</div>";
     }
+    
     //console.log(output);
     document.getElementById("world").innerHTML = output;
 }
@@ -89,6 +90,9 @@ displayPuntaje();
 displayWorld();
 displayPacman();
 
+/* Definir que pacman se mueva en 4 direcciones, que además no choque con los ladrillos y que incremente o decremente el valor de x e y
+según la dirección que tome. No usé la función keycode porque esta "deprecated" */
+
 document.addEventListener("keydown", function(event) {
         console.log(event);
         //  var tecla = event.key;
@@ -103,7 +107,10 @@ document.addEventListener("keydown", function(event) {
         } else if (event.key === "ArrowLeft" &&
             world[pacman.y][pacman.x - 1] !== 2) {
             pacman.x--;
-        }    
+        }   
+    /* En esta parte muestra las condiciones efectuadas para que pacman vaya comiendo las monedas, las cuales equivalen a 1 en nuestra var world,
+    y se le otorgue un puntaje.
+    Por otra parte, cuando coma las cereza (3) obtendrá un extra puntaje de 50y si pasa por el fantasma (1) se le descontará una vida.*/
         if (world[pacman.y][pacman.x] === 1) {
             puntaje += 10;
             world[pacman.y][pacman.x] = 0;
@@ -119,7 +126,7 @@ document.addEventListener("keydown", function(event) {
             displayVida();
         }
         displayPacman();
-        console.log(pacman);
+       //console.log(pacman); para ver el cambio de las coordenadas en la consola
     },
     true
 );
