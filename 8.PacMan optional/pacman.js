@@ -92,24 +92,18 @@ displayPacman();
 document.addEventListener("keydown", function(event) {
         console.log(event);
         //  var tecla = event.key;
-        if (event.key === "ArrowUp" && world[pacman.y - 1][pacman.x] !== 2) {
+        if (event.key === "ArrowUp" && world[pacman.y - 1][pacman.x] !== 2) { //!==2 para que no choque con el Brick
             pacman.y--;
-        } else if (
-            event.key === "ArrowDown" &&
-            world[pacman.y + 1][pacman.x] !== 2
-        ) {
+        } else if (event.key === "ArrowDown" &&
+            world[pacman.y + 1][pacman.x] !== 2) {
             pacman.y++;
-        } else if (
-            event.key == "ArrowRigth" &&
-            world[pacman.y][pacman.x + 2] !== 2
-        ) {
-            pacman.x++;
-        } else if (
-            event.key === "ArrowLeft" &&
-            world[pacman.y][pacman.x - 1] !== 2
-        ) {
+        } else if (event.key == "ArrowRigth" &&
+            world[pacman.y][pacman.x + 1] !== 2) {
+           pacman.x++;
+        } else if (event.key === "ArrowLeft" &&
+            world[pacman.y][pacman.x - 1] !== 2) {
             pacman.x--;
-        }
+        }    
         if (world[pacman.y][pacman.x] === 1) {
             puntaje += 10;
             world[pacman.y][pacman.x] = 0;
