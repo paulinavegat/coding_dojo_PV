@@ -1,0 +1,26 @@
+Actividad: Funciones de jQuery 
+Crea una página web que utilice las siguientes funciones de jQuery: No empieces a escribir jQuery al azar y encuentra elementos para adjuntar código jQuery. Piensa para qué podría ser útil cada función. A menudo nuestros estudiantes vuelven a esta actividad para repasar su jQuery. Utiliza el bosquejo como una motivación, pero siéntete libre de mejorarlo.   
+
+No destines más de 4 a 8 horas a esta actividad.
+
+Importante: A veces los alumnos gastan tanto tiempo revisando la documentación que esto les impide construir cosas.  Sometimes students spend so much time going through the documentation that it prevents them from actually building things. Revisa la documentación rápidamente y familiarízate solo con los métodos de jQuery a continuación. Dedica 4-5 horas en esta actividad y luego sigue avanzando puesto que más adelante profundizarás sobre cómo usar estos métodos de jQuery para construir cosas increíbles. El esquema de la derecha muestra solo 3 funciones, pero en esta actividad, queremos que agregues más y pruebes las siguientes 17 funciones de jQuery.
+
+
+
+.click
+.hide
+.show
+.toggle
+.slideDown
+.slideUp
+.slideToggle
+.fadeIn
+.fadeOut
+.addClass
+.before
+.after
+.append
+.html
+.attr
+.val
+.text
