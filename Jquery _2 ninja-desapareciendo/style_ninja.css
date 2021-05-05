@@ -1,0 +1,37 @@
+/*GENERAL*/
+
+* {
+    text-align: center;
+}
+
+#wrapper {
+    border: 2px ridge gray;
+    background: #eeecec;
+    display: inline-block;
+    border-radius: 10px;
+    width: 700px;
+}
+
+
+/*BODY*/
+
+h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+img {
+    width: 120px;
+    vertical-align: middle;
+    margin: 15px 8px;
+    border: grey 3px solid;
+}
+
+button {
+    margin-left: 430px;
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,3 @@
+Crea un página simple en HTML con 8 imágenes de igual ancho y largo (puedes usar las imágenes que quieras). Cuando una imagen es cliqueada, haz que desaparezca. Además, incluye un botón llamado 'Restaurar' en la parte inferior de la página, para que cuando sea cliqueado, todas las imágenes aparezcan.  
+
+No es necesario que las imágenes aparezcan donde solían aparecer. Por ejemplo hacer clic en la imagen 7 no necesita mostrar un espacio vacío donde la imagen 7 solía estar.  En cambio, la imagen 8 podría moverse donde la imagen 7 solía estar. 
