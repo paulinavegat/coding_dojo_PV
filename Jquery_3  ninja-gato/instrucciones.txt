@@ -1,0 +1,16 @@
+Crea un rompecabezas de jQuery utilizando dos imágenes divididas en 5 partes. Utilizando jQuery, haz que cuando cada parte sea cliqueada, cambie a una imagen diferente. Puedes usar tus propias imágenes y recortarlas o puedes descargar las imágenes de aquí.
+
+
+
+No dediques más de 3 horas intentando que funcione.
+
+Consejo Útil (Añadiendo Atributos Personalizados a Cualquier Etiqueta de HTML):
+Para cuando hagas esta actividad, hay un pequeño truco utilizado por muchos desarrolladores que puede serte útil. Recuerda que hemos enfatizado que HTML debería contener la información, CSS el aspecto y JS el comportamiento. Con esto claro. cuando miras esta actividad ¿dónde debería almacenarse la información de la imagen alternativa? Podrías argumentar que esto debiera ser en el HTML o en el JS, pero los desarrolladores experimentados dirán que debiera ser en el HTML. De esta forma, cuando tienes una etiqueta de HTML esta posee algunos atributos conocidos que tienen significado para el navegador. Por ejemplo, para "<img src="cat.png" />" estamos usando una etiqueta img de HTML con un atributo llamado 'src'. Ahora, también podemos agregar los atributos que queramos en cualquier HTML. Por ejemplo, considera lo siguiente:
+
+<img src='ninja1.png' data-alt-src='cat1.png' />
+Creamos nuestro propio y único atributo data-alt-src con el valor 'cat1.png'. El navegador no entenderá qué significa el atributo por lo que no hará nada, pero en tu código JavaScript puedes ingresar estos valores haciendo algo como lo siguiente:
+
+$('img').click(function() {
+  console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+});
+Crear atributos personalizados y guardar información útil en ellos son prácticas comunes entre los desarrolladores experimentados. Queremos que lo aprendas y apliques este principio cuando realices esta actividad. 

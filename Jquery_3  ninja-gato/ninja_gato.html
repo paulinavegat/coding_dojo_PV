@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Ninja a gato</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+                //   console.log('data-alt-src value is', $(this).attr('data-alt-src'));});
+                var SegImagen = $(this).attr('data-alt-src'); //retorna la imagen almacenada
+                var source = $(this).attr('src');
+                $(this).attr('src', SegImagen);
+                $(this).click(function() {
+                    $(this).attr('src', source);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <body>
+        <!--data-src atributo que permite almacenar una imagen y cargarla de forma selectiva a través de JavaScript-->
+        <!--Esas imágenes se cargarán mediante JavaScript después que el sitio termine de construir la estructura HTML. La imagen del marcador de posición se escala de la misma manera que las imágenes originales, 
+        por lo que ocupará el mismo espacio y no hará que el diseño se vuelva a pintar a medida que se cargan las imágenes.-->
+        <div> <img src="img/ninja0.png" class="cat" alt="cat" data-alt-src="img/cat0.png"></div>
+        <div> <img src="img/ninja1.png" class="cat" alt="cat" data-alt-src="img/cat1.png"></div>
+        <div> <img src="img/ninja2.png" class="cat" alt="cat" data-alt-src="img/cat2.png"></div>
+        <div> <img src="img/ninja3.png" class="cat" alt="cat" data-alt-src="img/cat3.png"></div>
+        <div> <img src="img/ninja4.png" class="cat" alt="cat" data-alt-src="img/cat4.png"></div>
+    </body>
+</body>
+
+</html>
