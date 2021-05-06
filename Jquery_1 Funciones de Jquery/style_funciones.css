@@ -1,0 +1,20 @@
+.letra {
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.background {
+    background: pink;
+}
+
+.color {
+    color: green;
+}
+
+.fuente {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#attrEx1 {
+    color: purple;
+}
