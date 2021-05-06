@@ -1,0 +1,10 @@
+Crea una página simple de HTML con 4 imágenes de igual ancho y largo 
+(puede usar las imágenes que quiéras). Cuando pongas el cursor en una imagen, 
+haz que se reemplace por otro imagen (en la misma posición). 
+Cuando pongas el cursor fuera de la imagen, haz que la imagen original vuelva. 
+
+HINT: La función de jQuery .hover() acepta 2 funciones como parámetros: 
+la primera función ejecuta el código cuando entramos al área con el cursor, 
+la segunda escribe el código para lo que queremos que suceda cuando el cursor salga del área. 
+
+No destines más de 3-6 horas intentando que esto funciones

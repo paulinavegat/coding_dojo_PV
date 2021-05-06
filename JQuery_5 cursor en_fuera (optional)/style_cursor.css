@@ -1,0 +1,19 @@
+/*GENERAL*/
+
+* {
+    text-align: center;
+}
+
+
+/*BODY*/
+
+h2 {
+    margin: 15px;
+    text-align: center;
+}
+
+img {
+    width: 120px;
+    vertical-align: middle;
+    margin: 15px 8px;
+}

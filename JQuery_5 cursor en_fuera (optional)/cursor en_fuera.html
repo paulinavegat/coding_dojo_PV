@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochilas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style_cursor.css">
+    <script>
+        $(document).ready(function() {
+            $('img').hover(function() {
+                var SegImagen = $(this).attr('data-alt-src'); //traer mi segunda imagen
+                var PplImage = $(this).attr('src'); //primera imagen
+                $(this).attr('src', SegImagen); //cuando paso por arriba de la primera imagen aparece la segunda
+                $(this).hover(function() {
+                    $(this).attr('src', PplImage); //pero inmediatamente devuelve la primera
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <h1>
+        Modelos de mochilas
+    </h1>
+
+    <img src="img/mh100_a.jpg" alt="mochilaMH100" data-alt-src="img/mh100_b.jpg">
+    <img src="img/mh101_a.jpg" alt="mochilaMH100" data-alt-src="img/mh101_b.jpg">
+    <img src="img/mh500_a.jpg" alt="mochilaMH100" data-alt-src="img/mh500_b.jpg">
+    <img src="img/mh500_1.jpg" alt="mochilaMH100" data-alt-src="img/mh500_2.jpg">
+
+</body>
+
+</html>
