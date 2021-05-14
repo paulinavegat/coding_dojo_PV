@@ -18,11 +18,15 @@
                     var max = tiempo.main.temp_max;
                     var min = tiempo.main.temp_min;
                     var sensacion = tiempo.main.feels_like;
+                   var lat = tiempo.coord.lat;
+                    var lon = tiempo.coord.lon;
+                    var latlon = lat + ", " + lon;
                     $("#name").html(tiempo.name);
                     // SI BIEN SE SOLICITA EN Fahrenheit YO UTILICE EN CELSIUS,  que es como se utiliza en Chile, lo que hubiese cambiado es de metric a imperial;
                     $("#info").html(`<h5>Temperatura: ${temp} °C</h5>
                     <p>Máx.: ${max} °C / Mín.: ${min} °C</p>    
-                    <p>Sensación de: ${sensacion} °C</p>`);
+                    <p>Sensación de: ${sensacion} °C</p>
+                    <p>Coordenadas: ${latlon} </p>`);
                 }, 'json');
                 return false;
             });
