@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="pokedex_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#pokedex").hide();
+            for (var i = 1; i <= 151; i++) {
+                //var dice trae el id de la imagen + su imagen
+                var pokemon =
+                    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" +
+                    i +
+                    ".png";
+                $("#pokes").append(
+                    "<img src = '" +
+                    pokemon +
+                    "'alt='pokémon'id ='" +
+                    i +
+                    "'>"
+                );
+            }
+
+            $("img").click(function() {
+                $("#pokedex").show();
+                var imagen = $(this).attr("src");
+                $.get(
+                    "https://pokeapi.co/api/v2/pokemon/" +
+                    $(this).attr("id"),
+                    function(info) {
+                        console.log(info);
+                        var descripcion = "";
+                        for (var i = 0; i < info.types.length; i++) {
+                            descripcion = `<h3> ${info.name} </h3>
+                        <img src='${imagen}' alt = 'pokemon'>
+                        <h4>Tipo(s):</h4>
+                        <p>${info.types[i].type.name}</p>
+                        <h4>Altura:</h4>
+                        <p>${info.height}</p>
+                        <h4>Peso:</h4> 
+                        <p>${info.weight}</p>`;
+                        }
+                        $("#pokedex").html(descripcion);
+                    },
+                    "json"
+                );
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Pokemon</h1>
+    <p>Una muestra de los 151 pokemon</p>
+
+    <div id="container">
+        <div id="pokes"></div>
+        <div id="pokedex"></div>
+    </div>
+</body>
+
+</html>
