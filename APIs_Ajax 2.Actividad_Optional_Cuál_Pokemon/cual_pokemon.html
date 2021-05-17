@@ -12,26 +12,15 @@
         $(document).ready(function() {
             $("#pokedex").hide();
             for (var i = 1; i <= 151; i++) {
-                //var dice trae el id de la imagen + su imagen
-                var pokemon =
-                    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" +
-                    i +
-                    ".png";
-                $("#pokes").append(
-                    "<img src = '" +
-                    pokemon +
-                    "'alt='pokémon'id ='" +
-                    i +
-                    "'>"
-                );
+                // trae el id de la imagen + su imagen
+                var pokemon = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + i + ".png";
+                $("#pokes").append("<img src = '" + pokemon + "'alt='pokémon'id ='" + i + "'>");
             }
 
             $("img").click(function() {
                 $("#pokedex").show();
                 var imagen = $(this).attr("src");
-                $.get(
-                    "https://pokeapi.co/api/v2/pokemon/" +
-                    $(this).attr("id"),
+                $.get("https://pokeapi.co/api/v2/pokemon/" + $(this).attr("id"),
                     function(info) {
                         console.log(info);
                         var descripcion = "";
