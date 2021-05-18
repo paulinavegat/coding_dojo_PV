@@ -27,6 +27,9 @@
                     <p>Máx.: ${max} °C / Mín.: ${min} °C</p>    
                     <p>Sensación de: ${sensacion} °C</p>
                     <p>Coordenadas: ${latlon} </p>`);
+                    //&q= significa incorporar marker. Con iframe no es necesario definir en css el tamaño del mapa, se puede incorporar en el mismo link
+                        $('#map').html(`<iframe height="300" width="100%" frameborder="0" style="border:0" allowfullscreen src="https://maps.google.com/?ll=&q=${tiempo.coord.lat},${tiempo.coord.lon}&z=11&t=m&output=embed"></iframe>`);
+                    },
                 }, 'json');
                 return false;
             });
@@ -49,6 +52,7 @@
             </div>
         </div>
     </main>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9HalQLFRmEFAjr4LGmqcsuFW0-1ucBw"></script>
 </body>
 
 </html>
