@@ -31,12 +31,12 @@ function obtenerDatos() {
 // enJquery sería algo como lo siguiente:
 
 /* $(document).ready(function() {
-            $("#info").click(function() {
+            $("button").click(function() {sacamos //elimino el onclick del HTML
                 var NHouses =
                     "https://www.anapioficeandfire.com/api/houses/";
                 N = 444; //https://www.anapioficeandfire.com/api/houses/?page=2
                 for (var i = 1; i <= N; i++) {
-                    link = Nhouses + i;
+                    link = NHouses + i;
 
                     $.ajax({url: link,
                         success: function(datos) {
