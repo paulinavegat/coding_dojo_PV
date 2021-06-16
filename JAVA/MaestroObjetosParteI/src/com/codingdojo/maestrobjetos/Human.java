@@ -2,14 +2,14 @@ package com.codingdojo.maestrobjetos;
 
 public class Human {
 	
-	//Attributes
+	//Atributos
 	private String name = "";
 	private int strength = 3;
 	private int intelligence = 3;
 	private int stealth = 3;
 	private int health = 100;
 	
-	//Constructors
+	//Constructores
     public Human(){
     }
 
@@ -49,7 +49,7 @@ public class Human {
 		this.health = health;
 	}
 	
-	//Methods
+	//Metodos
 	public void attack(Human human) {
 		human.setHealth(human.getHealth()-strength);
 		System.out.println(this.getName() + " ha atacado " + human.getName() + " disminuyendo " + this.getStrength() + " puntos");
