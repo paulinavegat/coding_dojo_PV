@@ -1,22 +1,23 @@
 package com.codingdojo.maestrobjetos;
 
+
 public class Human {
 	
 	//Atributos
-	private String name = "";
-	private int strength = 3;
-	private int intelligence = 3;
-	private int stealth = 3;
-	private int health = 100;
+	protected String name = "";
+	protected int strength = 3;
+	protected int stealth = 3;
+	protected int intelligence = 3;
+	protected int health = 100;
 	
-	//Constructores
+	//Constructors
     public Human(){
     }
-
     public Human(String name){
         this.name = name;
     }
-	
+    
+
 	//Getters & Setters
 	public String getName() {
 		return name;
@@ -49,10 +50,9 @@ public class Human {
 		this.health = health;
 	}
 	
-	//Metodos
+	//Metodo
 	public void attack(Human human) {
 		human.setHealth(human.getHealth()-strength);
-		System.out.println(this.getName() + " ha atacado " + human.getName() + " disminuyendo " + this.getStrength() + " puntos");
+		System.out.println(this.getName() + " ha sido atacado por " + human.getName() + " perdiendo " + this.getStrength() + " puntos de fuerza)");
 	}
-	
 }
