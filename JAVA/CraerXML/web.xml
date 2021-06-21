@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <display-name>SimpleServletProject</display-name>
+    
+    <servlet><!--nodo hijo-->
+        <servlet-name>simpleServlet</servlet-name> <!--nodo secundario-->
+        <servlet-class>org.codingdojo.tutorial.SimpleServlet</servlet-class><!--nodo secundario-->
+    </servlet>
+    
+    <servlet-mapping><!--nodo hijo-->
+        <servlet-name>simpleServlet</servlet-name><!--nodo secundario de este hijo, elemento-->
+        <url-pattern>/simpleServlet</url-pattern><!--nodo secundario de este hijo, elemento-->
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>xmlServlet</servlet-name>
+        <servlet-class>or.codingdojo.tutorial.XmlServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>xmlServlet</servlet-name>
+        <url-pattern>/xmlServletpath</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app> <!--nodo raíz llamado-->

@@ -1,0 +1,53 @@
+    <!--Crear un menú de desayuno y cena para un restaurante. -->
+<?xml version="1.0" encoding="UTF-8"?>
+<restauranteMenu>
+    <menu category="desayuno">
+        <item category="opcionSaludable">
+            <name>Porridge</name>
+            <description>Bowl de avena, miel y frutos secos</description>
+            <price>$3.500</price>
+        </item>
+        <item category="opcionTradicional">
+            <name>Sandwich Jamón Palta</name>
+            <description>1 Sandwich Jamón Palta/ queso palta</description>
+            <price>$3.000</price>
+        </item>
+        <item category="bebida caliente">
+            <name>Cafe de grano</name>
+            <description>1 taza de café de grano </description>
+            <price>$1.500</price>
+        </item>
+        <item category="bebida caliente">
+            <name>Cafe con leche</name>
+            <description>1 taza de café instantáneo y leche</description>
+            <price>$1.000</price>
+        </item>
+    </menu>
+    <menu category="cena">
+        <item category="plato caliente">
+            <name>Crema de Verduras</name>
+            <description>Plato de crema de verduras, sujeto menú del día</description>
+            <price>$5.000</price>
+        </item>
+        <item category="plato caliente">
+            <name>Raviolones de queso feta y albahaca</name>
+            <description>Plato de raviolis, pesto y queso feta</description>
+            <price>$7.500</price>
+        </item>
+        <item category="plato frío">
+            <name>Ensalada para dos</name>
+            <description>Plato surtido de ensaldas (palmitos, palta, choclo, tomate, lechuga)</description>
+            <price>$6.000</price>
+        </item>
+        <item category="bebestible">
+            <name>Jugo Natural</name>
+            <description>Vaso de Jugo (Mango, Frutilla, Sandía)</description>
+            <price>$1.500</price>
+        </item>
+        <item category="bebestible">
+            <name>Agua Mineral</name>
+            <description>Botella indivual 500ml</description>
+            <price>$1.000</price>
+        </item>
+    </menu>
+</restauranteMenu>
