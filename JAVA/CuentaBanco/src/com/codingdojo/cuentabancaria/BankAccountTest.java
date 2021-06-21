@@ -4,29 +4,28 @@ public class BankAccountTest {
 
 	public static void main(String[] args) {
 		BankAccount p1 = new BankAccount();
-		BankAccount p2 = new BankAccount(1000, 2000);
-		BankAccount p3 = new BankAccount(100, 500);
+		BankAccount p2 = new BankAccount();
+
 		
+		System.out.println("----------------------------------------");
+		System.out.print("Num. Cuenta de Ahorro: "+ p1.getNumeroCuentaAhorro() +"\nNum. Cuenta Corriente: "+ p1.getNumeroCuentaCorriente());
+ 		p1.setSaldoCuentaAhorro(200.0);
+ 		p1.setSaldoCuentaCorriente(1000000.0);
+		p1.depositoCuentaAhorro(1598000.0);
+		p1.giroCuentaCorriente(100.0);
 		p1.balanceTotal();
-		p3.balanceTotal();
-		
-       System.out.println("----------------------------------------");		
-		p1.depositarDinero(1598000.0, "saldoCuentaAhorro");
-		p2.retirarDinero(3040.0, "saldoCuentaAhorro");
-		p3.retirarDinero(100.0, "saldoCuentaCorriente");
-		p1.retirarDinero(100.0, "saldoCuentaCorriente");
-		
-		System.out.println("----------------------------------------");		
-		
-		p1.balanceTotal();
+		System.out.println("----------------------------------------");
+		System.out.print("Num. Cuenta de Ahorro: "+ p2.getNumeroCuentaAhorro()+"\nNum. Cuenta Corriente: "+ p2.getNumeroCuentaCorriente());
+
+		p2.depositoCuentaCorriente(30000);
+		p2.giroCuentaCorriente(2000);
+		p2.depositoCuentaAhorro(50000);
+		p2.giroCuentaAhorro(100);
 		p2.balanceTotal();
-		p3.balanceTotal();
-		
-		
-		
-		System.out.println(BankAccount.numeroDeCuentas);
+		System.out.println("----------------------------------------");		
+			
 		System.out.println("----------------------------------------");	
-		System.out.println(BankAccount.cantidadDinero);
+		System.out.println("El total de número de cuentas es: "+ BankAccount.numeroDeCuentas);
 		
 	}
 	
