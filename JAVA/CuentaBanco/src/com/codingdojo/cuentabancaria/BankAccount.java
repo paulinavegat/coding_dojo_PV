@@ -41,23 +41,23 @@ public class BankAccount {
    public double getSaldoCuentaCorriente(double d) {
 	return saldoCuentaCorriente;
 }
-
-public void setSaldoCuentaCorriente(double cantidad) {
-	this.saldoCuentaCorriente +=cantidad;
-}
-
-public double getSaldoCuentaAhorro(double d) {
-	return saldoCuentaAhorro;
-}
-
-public void setSaldoCuentaAhorro(double cantidad) {
-	this.saldoCuentaAhorro +=cantidad;
-}
+	
+	public void setSaldoCuentaCorriente(double cantidad) {
+		this.saldoCuentaCorriente +=cantidad;
+	}
+	
+	public double getSaldoCuentaAhorro(double d) {
+		return saldoCuentaAhorro;
+	}
+	
+	public void setSaldoCuentaAhorro(double cantidad) {
+		this.saldoCuentaAhorro +=cantidad;
+	}
 
 
 //depositos y giros por tipo de cuenta
 
-public void depositoCuentaAhorro (double cantidad) {
+   public void depositoCuentaAhorro (double cantidad) {
 		this.saldoCuentaAhorro+=cantidad;
 		System.out.println("\nSe ha depositado $" + Double.toString(cantidad)+ " a tu cuenta de ahorro.");
 	}  
