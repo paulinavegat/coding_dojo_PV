@@ -1,0 +1,19 @@
+Calculadora (Opcional)
+Debe crear la aplicación de una Calculadora para una oficina de contabilidad. Los contadores que lo han contratado le han pedido que toda la aplicación debe estar en una sola página y mantener el historial de todos los resultados. También debe ser cliqueable  "justo como una calculadora real".
+
+Objetivos
+Implementar Post y Session juntos con Servlets.
+Actividades
+Utilizar el modelo Calculator que contiene la lógica para manejar los posibles valores de entrada.
+Utilizar un solo servlet para toda la aplicación.
+Permitir diferentes formas de ingresar datos como haciendo clic o escribiendo en el cuadro de entradas.
+Debe utilizar las siguientes variables en la sesión currentCalculator,currentNumber, results.
+Cuando el botón =  sea presionado, necesitará calcular el proceso actual y agregarlo a los cálculos de resultsy crear uno nuevo.
+Muestre una lista de los resultados.
+Notas
+Puede utilizar <button name="character" value="3">3</button> para enviar los diferentes valores dependiendo de qué botón sea presionado. ¿Cómo puede utilizar esto para permitir al usuario usar tanto la caja de texto como hacer clic en cada botón para cambiar el número actual?
+Su modelo de Calculator necesitará un atributo para almacenar la operación actual mientras que ingresan el nuevo número.
+¿Hiciste una calculadora antes?
+Desafíos Opcionales
+Haga que el usuario pueda combinar operaciones sin presionar =; como "6" + "8" + "12" seguido por un "=" y debería retornar "26" y agregarlo a la lista de resultados.
+Agregar un operador "." para agregar números decimales.
