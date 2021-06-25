@@ -1,0 +1,10 @@
+Botón Clicker
+En esta actividad, creará un botón Clicker. Cada vez que el usuario haga click en el botón debe incrementar un contador.
+
+buttonClicker
+
+Objetivos
+Implementar servlets con Session.
+Actividades
+Crear un servlet con un contador que mostrará una página JSP con la información de la estructura.
+Utilizar Session para hacer un seguimiento de cuántas veces el usuario hace click en su página.
