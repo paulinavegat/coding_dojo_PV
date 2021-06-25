@@ -1,0 +1,10 @@
+Generador de Palabras Aleatorias (Opcional) 
+En esta actividad creará un sitio web que permita al usuario crear una palabra aleatoria. Una vez la palabra haya sido generada, también debe mostrar la última vez que se generó una palabra.
+
+randomWord
+
+Objetivos
+Implementar servlets con Session.
+Actividades
+Crear un servlet Random que mostrará una página JSP con la información de la estructura.
+Una vez que el usuario haga click en el botón Generate, crear una palabra aleatoria con una mezcla de letras y números. Haga que tenga al menos 10 caracteres de longitud. 
