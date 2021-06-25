@@ -1,0 +1,18 @@
+
+Se le ha pedido hacer una aplicación sencilla de un cronómetro para la liga local de Flonkerton. La aplicación necesita iniciar el tiempo, detener el tiempo y restablecerlo de nuevo para utilizarlo en el futuro. Además de mostrar el tiempo total, debe mostrar también el número de segundos.
+
+Pista: Una vez que conoce cuántos segundos hay en cualquier intervalo dado, puede encontrar lo siguiente:
+
+Minutos = Redondear por debajo (TOTAL_SEGUNDOS / 60).
+Segundos = TOTAL_SEGUNDOS % 60.
+Objetivos
+Implementar servlets con Session.
+Actividades
+Utilizar un modelo Timer para tener los tiempos de inicio y finalización, así como para calcular el tiempo total utilizando un método dentro del modelo.
+Haga que la página le permita al usuario iniciar el tiempo, detener el tiempo y restablecer el tiempo.
+Mostrar un historial de todos los tiempos que han sido detenidos anteriormente.
+Al actualizar la página sin detener o restablecer el reloj, actualizar a la hora actual e iniciar el tiempo.
+Mostrar el tiempo total de ejecución con segundos.
+Desafíos Opcionales
+¿Puede utilizar parámetros de consulta para que solo utilice un único servlet?
+¿Flonkerton intenso? Utilice milisegundos y cambie el formato para que acepte 00:00:00.
