@@ -1,4 +1,0 @@
-Actividades
-Crear una nueva aplicación Spring Boot.
-Cuando el usuario visite la ruta raíz "/", haga que aparezca un buen mensaje para el cliente.
-Cuando el usuario visite la ruta "/random", haga que aparezca un buen mensaje acerca de Spring Boot al cliente.
