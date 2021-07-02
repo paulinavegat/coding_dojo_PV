@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+.container {
+    
+	text-align: center;
+	margin-top: 100px;
+
+}
+h2 a {
+	color: blue;
+}
+.green {
+	 color: green;
+	}
