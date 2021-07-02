@@ -10,11 +10,7 @@ public class HolaHumanoController {
 	
 	@RequestMapping ("/")
 	public String Human(@RequestParam(value="name", defaultValue="Human") String searchQuery) {
-		if (searchQuery.equals(null)) {
-			return "Hello " + " Welcome to SpringBoot!";
-		}
-		else {
+
 			return "Hello " + searchQuery + " Welcome to SpringBoot!";
 		}
 	}
-}
