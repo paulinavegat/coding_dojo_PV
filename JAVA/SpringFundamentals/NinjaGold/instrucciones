@@ -1,0 +1,6 @@
+Juego Ninja Gold
+¡Cree un mini juego que ayude a un ninja a hacer dinero! Cuando empiece el juego, su ninja debe tener 0 de oro. El ninja puede ir a diferentes lugares como Granja (Farm), Cueva (Cave), Casa (House) y Casino (Casino) y ganar diferentes cantidades de oro. En el caso del casino, el ninja puede ganar o perder hasta 50 de oro. Su trabajo es crear una aplicación web que permita a este ninja ganar oro y mostrar las actividades que ha realizado este ninja.
+
+Solo necesita 2 métodos para completar esta actividad.
+
+Pista: Utilice entradas escondidas para diferenciar los formularios.
