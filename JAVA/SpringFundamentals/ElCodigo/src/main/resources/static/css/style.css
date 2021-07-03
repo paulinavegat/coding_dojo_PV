@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+*{
+	text-align:center;
+}
+
+h3 {
+	margin-top: 50px;
+}
+
+p{
+	color:red;
+	}
+	
+button{
+  display:inline;
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 2px 5px #888888;
+  background-color:white;
+}
+
