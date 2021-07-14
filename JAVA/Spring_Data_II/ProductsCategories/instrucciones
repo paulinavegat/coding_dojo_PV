@@ -1,0 +1,8 @@
+Temas
+Relaciones Muchos-a-Muchos.
+Métodos JPA.
+Actividades
+Permitir a los usuarios crear productos.
+Permitir a los usuarios crear categorías.
+En la página que muestra los productos, permitir a los usuarios agregar categorías a un producto específico.
+En la página que muestra las categorías, permitir a los usuarios agregar productos a una categoría específica.
