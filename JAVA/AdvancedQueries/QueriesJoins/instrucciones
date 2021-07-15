@@ -1,0 +1,19 @@
+Actividades
+¿Qué consulta ejecutarías para obtener todos los países que hablan Sloveno? Su consulta debe retornar el nombre del país, lenguaje y porcentaje del lenguaje. Su consulta debe organizar los resultados por porcentaje en orden descendente.
+
+¿Qué consulta ejecutarías para mostrar el número total de ciudades de cada país? Su consulta debe retornar el nombre del país y el número total de ciudades. Su consulta debe organizar los resultados por número de ciudades en orden descendente.
+
+¿Qué consulta ejecutarías para obtener todas las ciudades en México con una población mayor a 500.000? Su consulta debe organizar los resultados por población en orden descendente.
+
+¿Qué consulta ejecutarías para obtener todos los lenguajes en cada país con un porcentaje mayor al 89%? Su consulta debe organizar los resultados por porcentaje en orden descendente.
+
+¿Qué consulta ejecutarías para obtener todos los países con un superficie de área inferior a 501 y una población mayor a 100.000?
+
+¿Qué consulta ejecutarías para obtener todos los países que tienen solo Constitutional Monarchy (Monarquía) y una superficie de área mayor a 200 y una expectativa de vida superior a los 75 años?
+
+¿Qué consulta ejecutarías para obtener todas las ciudades de Argentina dentro del distrito de Buenos Aires y que tengan una población mayor a 500.000? La consulta debe retornar el nombre del país, nombre de la ciudad, distrito y población.
+
+¿Qué consulta ejecutarías para sumar el número de países en cada región? La consulta debe mostrar el nombre de la región y el número de países. Además, la consulta debe organizar los resultados por el número de países en orden descendente.
+
+Configurar
+Primero, cree un nuevo proyecto Spring Boot llamado countries. En este proyecto, tendrá un controlador con un método con la anotación @RequestMapping('/') y un servicio llamado ApiService. Este servicio tendrá todas las dependencias del repositorio que necesita. Su trabajo es crear los repositorios y los modelos. Para cada consulta, todo lo que necesita cambiar es el método de servicio (que activará la consulta) que el manejador invoca para obtener la solicitud de la ruta raíz. A continuación hay una tabla para que la use como referencia.
