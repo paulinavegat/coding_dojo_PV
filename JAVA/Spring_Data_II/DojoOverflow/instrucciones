@@ -1,0 +1,12 @@
+Temas
+Relaciones.
+Validaciones.
+Modelos.
+Métodos JPA.
+
+
+Actividades
+Hacer que el panel principal muestra todas las preguntas y su tema.
+Permitir a los usuarios crear preguntas con etiquetas e implementar la validación de errores.
+Permitir a los usuarios responder a las preguntas e implementar la validación de errores.
+Hacer que la página de pregunta muestre todas las respuestas para esa pregunta en específico.
