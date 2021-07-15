@@ -1,0 +1,20 @@
+Lista de Estudiantes I
+En esta actividad, practicará las relaciones uno-a-uno creando una aplicación Lista de Estudiantes. Analice la siguiente estructura y cree los modelos apropiados con sus correspondientes relaciones.
+
+Configuración
+Crear la vista web para esta actividad será opcional, solo si está atrasado. Primero, cree un controlador y un servicio llamado ApiService. Este servicio tendrá todas las dependencias de repositorios que necesite. Complete cada actividad a continuación:
+
+Actividades
+
+Tener un método en el controlador que maneje el siguiente ejemplo de URL:/students/create?firstName=John&lastName=Doe&age=35. Cree 3 estudiantes con este método.
+Tener un método en el controlador que maneje el siguiente ejemplo de URL:/contacts/create?student=1&address=1234%20Some%20Street&city=Los%20Angeles&state=CA. El parámetro de consulta de student debe ser el id del estudiante en la base de datos. Crear la información de contacto para el estudiante de la actividad anterior (%20 es la codificación de los espacios en los parámetros de consulta).
+Tener un método en el controlador que maneje el siguiente ejemplo de URL:/students. Mostrar en pantalla la información de todos los estudiantes a junto con su información de contacto.
+
+Opcional
+Crear Vistas web para esta actividad.
+Crear una página web para crear estudiantes.
+Crear una página web para crear contactos para los estudiantes existentes.
+Crear una página web que muestre toda la información de cada estudiante.
+Temas
+Relaciones 1:1.
+Métodos JPA.
