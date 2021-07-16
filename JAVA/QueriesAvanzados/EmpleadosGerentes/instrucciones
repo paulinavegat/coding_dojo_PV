@@ -1,0 +1,12 @@
+Empleados y Gerentes
+En esta actividad, creará los modelos para un sistema de seguimiento de Empleados y Gerentes. En este caso, no necesitará una tabla intermedia para rastrear las relaciones porque solo un Gerente puede tener muchos empleados. ¿Cómo cambiaría su modelo para reflejar esto?
+
+ERD
+manager
+
+Temas
+Self Join.
+Actividades
+Implementar el modelo para que la relación self join funcione.
+Implementar un método getter que permitirá a un Gerente obtener todos sus empleados.
+Implementar un método getter que permitirá a un Empleado obtener su Gerente.
