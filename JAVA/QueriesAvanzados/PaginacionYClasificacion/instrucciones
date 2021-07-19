@@ -1,0 +1,11 @@
+Paginación y Clasificación
+En esta actividad, construirá sobre las lecciones JOINS. Creará un sistema de paginación con una consulta que una dos tablas. Su objetivo es construir lo siguiente:
+
+
+
+Temas
+Paginación.
+Clasificación.
+Actividades
+Implementar la paginación en la consulta que une la tabla dojos y la tabla ninjas. ADVERTENCIA: Paginación y Clasificación no funcionan con las consultas en SQL puro o consultas nativas. Debe usar JPQL.
+Hacer que la lista esté ordenada por el nombre del dojo.
