@@ -1,0 +1,14 @@
+Características
+Registro e Inicio de Sesión con validaciones.
+
+Mostrar dónde se realizarán los eventos, separado por estados (la primera tabla muestra los eventos del mismo estado que el usuario que inició sesión; la segunda tabla muestra los eventos que se realizarán en otros estados).
+
+Actualizar la Acción/Estado (Action/Status) de cada participación al evento.
+
+ Habilitar unirse a un evento; cancelar la participación al evento o editar/eliminar los eventos creados por el usuario.
+
+Mostrar los asistentes por evento y el foro de discusión por evento.
+
+Solo el creador del evento puede editarlo.
+
+Función para cerrar sesión.
