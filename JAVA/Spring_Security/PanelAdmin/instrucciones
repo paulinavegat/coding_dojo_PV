@@ -1,0 +1,18 @@
+Su sitio se estaba saliendo de control y necesita permitir a un administrador moderarlo. Extienda su aplicación anterior para que cada vez que alguien se registre y no haya administrador, se convierta en el administrador. Los administradores debe ser redirigidos al Panel de Administración en una página separada donde tengan la capacidad de ver a todos los usuarios, borrar a los usuarios no administradores y darle a los usuarios estado de administrador.
+
+Metas
+Familiarizarse con inicio de sesión y registro.
+Aprender sobre los niveles de acceso de usuario.
+
+Actividades
+Crear un indicador de nivel privilegiado para indicar el nivel del usuario.
+Si no hay administrador, el siguiente usuario que inicie sesión se convertirá en el administrador.
+Cree una nueva página para el Panel de Administración que muestre a todos los usuarios.
+Permita a los administradores eliminar los cuentas de los usuarios no administradores.
+Permita a los administradores otorgar el estado de administrador a los usuarios no administradores.
+Solo los administradores pueden ver el Panel de Administración.
+
+
+Desafíos Opcionales
+Cree un estado súper administrador para el primer usuario que se registró, permítale eliminar incluso a otros administradores.
+Ocultar el súper administrador del Panel de los otros administradores.
