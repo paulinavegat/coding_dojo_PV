@@ -1,0 +1,8 @@
+Características
+Registro e inicio de sesión con validaciones.
+
+Dos tipos de usuarios: Host y Guest.
+
+Editar el lugar, solo lo puede hacer el Host.
+
+Función de cierre de sesión.
